@@ -4,7 +4,7 @@
   "description": "Express/React Application Boilerplate ",
   "author": "Chris Kurhan chris.kurhan@dllgroup.com",
   "scripts": {
-    "start": "npx nodemon ./src/app.ts",
+    "start": "npx nodemon ./src/server.ts",
     "build": "npx tsc",
     "test": "jest --runInBand --coverage"
   },
