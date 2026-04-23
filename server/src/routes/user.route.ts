@@ -3,10 +3,11 @@ import { users } from '../data/users';
 import { logger } from '../utils/logger';
 import { QueryValidationError } from '../shared/query';
 import { getUsers } from '../services/users.service';
+import usersRateLimiter from '../middleware/rateLimit';
 
 const router = express.Router();
 
-router.get('/', (req: Request, res: Response) => {
+router.get('/', usersRateLimiter, (req: Request, res: Response) => {
   try {
     const result = getUsers(req, users);
     
@@ -16,7 +17,6 @@ router.get('/', (req: Request, res: Response) => {
     });
 
     return res.status(200).json(result);
-
   } catch (error) {
     if (error instanceof QueryValidationError) {
       logger.warn('Invalid query parameters', { error });

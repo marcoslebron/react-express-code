@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1776952002809" clover="3.2.0">
-  <project timestamp="1776952002810" name="All files">
-    <metrics statements="124" coveredstatements="117" conditionals="68" coveredconditionals="54" methods="16" coveredmethods="16" elements="208" coveredelements="187" complexity="0" loc="124" ncloc="124" packages="7" files="11" classes="11"/>
+<coverage generated="1776953225117" clover="3.2.0">
+  <project timestamp="1776953225117" name="All files">
+    <metrics statements="130" coveredstatements="123" conditionals="70" coveredconditionals="56" methods="17" coveredmethods="17" elements="217" coveredelements="196" complexity="0" loc="130" ncloc="130" packages="8" files="12" classes="12"/>
     <package name="src">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="app.ts" path="D:\Dev\react-express-code-interview\server\src\app.ts">
@@ -37,8 +37,19 @@
         <line num="7" count="1" type="stmt"/>
       </file>
     </package>
+    <package name="src.middleware">
+      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="rateLimit.ts" path="D:\Dev\react-express-code-interview\server\src\middleware\rateLimit.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+      </file>
+    </package>
     <package name="src.routes">
-      <metrics statements="22" coveredstatements="20" conditionals="8" coveredconditionals="7" methods="1" coveredmethods="1"/>
+      <metrics statements="23" coveredstatements="21" conditionals="8" coveredconditionals="7" methods="1" coveredmethods="1"/>
       <file name="index.route.ts" path="D:\Dev\react-express-code-interview\server\src\routes\index.route.ts">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
@@ -48,18 +59,19 @@
         <line num="8" count="1" type="stmt"/>
       </file>
       <file name="user.route.ts" path="D:\Dev\react-express-code-interview\server\src\routes\user.route.ts">
-        <metrics statements="17" coveredstatements="15" conditionals="8" coveredconditionals="7" methods="1" coveredmethods="1"/>
+        <metrics statements="18" coveredstatements="16" conditionals="8" coveredconditionals="7" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="8" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
         <line num="11" count="8" type="stmt"/>
-        <line num="13" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="18" count="4" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="14" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="4" type="stmt"/>
         <line num="21" count="4" type="cond" truecount="1" falsecount="1"/>
         <line num="22" count="4" type="stmt"/>
         <line num="23" count="4" type="stmt"/>
