@@ -51,8 +51,20 @@ function compareValues(a: unknown, b: unknown): number {
     return a - b;
   }
 
+  if (a instanceof Date && b instanceof Date) {
+    return a.getTime() - b.getTime();
+  }
+  
   return String(a).localeCompare(String(b), undefined, {
     numeric: true,
     sensitivity: 'base',
   });
 }
+
+// function compareDates(left: unknown, right: unknown): number {
+
+//   const dateA =  new Date(left as string);
+//   const dateB = new Date(right as string);
+
+//   return dateA.getTime() - dateB.getTime();
+// }
